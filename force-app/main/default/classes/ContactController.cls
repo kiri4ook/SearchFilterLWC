@@ -20,15 +20,4 @@ public with sharing class ContactController {
   }
       return contList;
    }
-
-   // @AuraEnabled(cacheable=true)
-   // public static List<Contact> getContacts( String searchkey) {
-   //     System.debug('searchkey'+searchkey);
-   //     string searchKeyword = '%' + searchkey + '%';
-   //     return [
-   //         SELECT Id, FirstName, LastName, Phone, Email, Account.Name,AccountId, CreatedDate
-   //         FROM Contact where Name LIKE :searchKeyword
-   //         LIMIT 5
-   //     ];
-   // }
 }
